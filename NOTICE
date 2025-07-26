@@ -1,0 +1,20 @@
+Perswade Watson - Real-Time AI Sales Voice Agent
+Copyright 2025 Perswade Watson Team (@ZW, @MadDog, @ltngstrikes, @Vic, @LoViz, @FatTie, @bruceleads)
+
+This product includes software developed by the Perswade Watson Team.
+
+Licensed under the Apache License, Version 2.0 (the "License").
+You may obtain a copy of the License at:
+http://www.apache.org/licenses/LICENSE-2.0
+
+KEY INNOVATIONS (Patent-Pending):
+- C²PS Methodology for real-time sales conversation analysis
+- WebSocket-based voice agent architecture with <300ms latency
+- Real-time conversion intelligence system
+
+THIRD-PARTY COMPONENTS:
+- AssemblyAI Universal-Streaming API (separate license)
+- Next.js, React, FastAPI, and other open source dependencies (see package.json/requirements.txt)
+
+For commercial licensing, enterprise support, or patent licensing inquiries:
+Contact the maintainers through the project repository.
