@@ -6,7 +6,6 @@ Real-time voice agent that transcribes sales calls, analyzes them using C²PS me
 
 1. **Get AssemblyAI API Key**: Sign up at [AssemblyAI](https://www.assemblyai.com/)
 2. **Set Environment**: Add your API key to `.env` file
-4. **Open Browser**: Visit http://localhost:3000
 
 ## 🏗️ Architecture
 
@@ -45,7 +44,7 @@ DATABASE_URL=postgresql://...
 SECRET_KEY=your_secret
 ```
 
-## 🏆 AssemblyAI Challenge 2025 (Withehld submission)
+## 🏆 AssemblyAI Challenge 2025 (Withheld from submission)
 
 Built for the Business Automation category, showcasing:
 - Universal-Streaming integration
@@ -59,9 +58,10 @@ Built for the Business Automation category, showcasing:
 
 ## 🎯 Success Metrics
 
-- 32% conversion rate improvement
+- 30-40% conversion rate improvement
 - 60% faster rep onboarding
-- $2.3M additional revenue per 100 reps
 - <500ms real-time guidance delivery
 
 Built with ❤️ for sales teams everywhere.
+
+"Conversations only sometimes make money. Conversions always make money."
