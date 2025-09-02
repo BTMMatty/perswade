@@ -1,29 +1,39 @@
-# Perswade™ Trademark Policy
+# Trademark Notice
 
-## Overview
-"Perswade" is a trademark of VT Infinite, Inc d/b/a Perswade.xyz. While our code is open source under the MIT License, our brand and trademarks are protected.
+"Perswade" is a trademark of VT Infinite Inc.
 
-## Acceptable Use
-You MAY:
-- ✅ Use "Perswade" to refer to the official project
-- ✅ Use "Perswade" to describe compatibility (e.g., "Compatible with Perswade")
-- ✅ Use "Perswade" in articles, tutorials, and presentations about the project
+## Trademark Usage Guidelines
 
-## Restricted Use
-You MAY NOT without explicit permission:
-- ❌ Use "Perswade" in your product/company name
+While the Perswade software is open source under the MIT License, the Perswade 
+name and branding are protected trademarks.
+
+### You MAY:
+- ✅ Use the software for any purpose
+- ✅ Modify and distribute the code
+- ✅ Use "Perswade" to refer to this original project
+- ✅ State compatibility with Perswade (e.g., "Compatible with Perswade")
+- ✅ Use "Perswade" in articles, tutorials, and documentation
+
+### You MAY NOT without written permission:
+- ❌ Name your fork or derivative work "Perswade"
+- ❌ Use "Perswade" in your product or company name
 - ❌ Use "Perswade" in domain names
-- ❌ Create modified versions called "Perswade"
-- ❌ Use our logo without permission
-- ❌ Claim official affiliation with Perswade
+- ❌ Imply official endorsement by VT Infinite Inc. or Matthew Adams
+- ❌ Use the Perswade logo or visual identity
 
-## Naming Forks
-If you fork Perswade, you must:
-1. Choose a different name for your project
+### Naming Forks and Derivatives
+If you create a fork or derivative work, you must:
+1. Choose a different name
 2. Remove all Perswade branding
-3. Clearly state it's a fork of Perswade
+3. Clearly state it's based on or forked from Perswade
 
-## Contact
-For trademark usage requests: legal@perswade.xyz
+### Support & Contact
+For commercial support, consulting, or trademark usage requests:
+- Author: Matthew Adams
+- Company: VT Infinite Inc.
+- Email: matthew@vt-infinite.com
 
-Last updated: $(date +%Y-%m-%d)
+## Enforcement
+
+VT Infinite Inc. reserves the right to enforce its trademark rights to prevent
+confusion in the marketplace and protect users from unofficial versions.
