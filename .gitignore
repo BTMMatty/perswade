@@ -8,43 +8,45 @@ venv/
 env/
 ENV/
 .venv
-*.egg-info/
+pip-log.txt
+pip-delete-this-directory.txt
 .pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
 
-# macOS
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# IDEs
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Environment variables
-.env
-.env.local
-.env.*.local
-
-# Logs
+# Node
+node_modules/
+.next/
+out/
+build/
+dist/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Dependencies
-node_modules/
-/frontend/node_modules/
-/frontend/.next/
-/frontend/out/
-/frontend/build/
-
-# Production
-/build
-/dist
-
-# Misc
+# Environment
+.env
+.env.local
+.env.*.local
+*.key
 *.pem
-.vercel
-*.tmp
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Backups
+.backup*/
+*.bak
+*.backup
+
+# Cache
+.cache/
+*.cache

@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ORKESTRA BRAND: Pure Black & White - No Compromise */
+    --background: 0 0% 100%; /* #FFFFFF */
+    --foreground: 0 0% 0%; /* #000000 */
+    
+    --card: 0 0% 100%; /* #FFFFFF */
+    --card-foreground: 0 0% 0%; /* #000000 */
+    
+    --popover: 0 0% 100%; /* #FFFFFF */
+    --popover-foreground: 0 0% 0%; /* #000000 */
+    
+    /* Primary: Pure black on white */
+    --primary: 0 0% 0%; /* #000000 */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF */
+    
+    /* Secondary: Inverted for contrast */
+    --secondary: 0 0% 0%; /* #000000 */
+    --secondary-foreground: 0 0% 100%; /* #FFFFFF */
+    
+    /* Muted: Using opacity for subtlety */
+    --muted: 0 0% 100%; /* #FFFFFF */
+    --muted-foreground: 0 0% 0%; /* #000000 with opacity */
+    
+    --accent: 0 0% 0%; /* #000000 */
+    --accent-foreground: 0 0% 100%; /* #FFFFFF */
+    
+    /* Destructive: Still black, but we'll use borders/animations for emphasis */
+    --destructive: 0 0% 0%; /* #000000 */
+    --destructive-foreground: 0 0% 100%; /* #FFFFFF */
+    
+    /* Borders: Black lines only */
+    --border: 0 0% 0%; /* #000000 */
+    --input: 0 0% 0%; /* #000000 */
+    --ring: 0 0% 0%; /* #000000 */
+    
+    /* ORKESTRA EDGE: Zero radius - sharp corners only */
+    --radius: 0;
+  }
+
+  /* Dark mode: Invert for pure contrast */
+  .dark {
+    --background: 0 0% 0%; /* #000000 */
+    --foreground: 0 0% 100%; /* #FFFFFF */
+    
+    --card: 0 0% 0%; /* #000000 */
+    --card-foreground: 0 0% 100%; /* #FFFFFF */
+    
+    --popover: 0 0% 0%; /* #000000 */
+    --popover-foreground: 0 0% 100%; /* #FFFFFF */
+    
+    --primary: 0 0% 100%; /* #FFFFFF */
+    --primary-foreground: 0 0% 0%; /* #000000 */
+    
+    --secondary: 0 0% 100%; /* #FFFFFF */
+    --secondary-foreground: 0 0% 0%; /* #000000 */
+    
+    --muted: 0 0% 0%; /* #000000 */
+    --muted-foreground: 0 0% 100%; /* #FFFFFF with opacity */
+    
+    --accent: 0 0% 100%; /* #FFFFFF */
+    --accent-foreground: 0 0% 0%; /* #000000 */
+    
+    --destructive: 0 0% 100%; /* #FFFFFF */
+    --destructive-foreground: 0 0% 0%; /* #000000 */
+    
+    --border: 0 0% 100%; /* #FFFFFF */
+    --input: 0 0% 100%; /* #FFFFFF */
+    --ring: 0 0% 100%; /* #FFFFFF */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    /* ORKESTRA BRAND: JetBrains Mono for that code-edge feel */
+    font-family: 'JetBrains Mono', monospace;
+    font-feature-settings: "liga" 1, "calt" 1; /* Enable ligatures */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    /* Orkestra edge: High contrast, sharp rendering */
+    text-rendering: optimizeLegibility;
+    letter-spacing: -0.02em;
+  }
+  
+  /* ORKESTRA TYPOGRAPHY SYSTEM */
+  h1 {
+    @apply text-5xl font-bold tracking-tight;
+  }
+  
+  h2 {
+    @apply text-3xl font-bold tracking-tight;
+  }
+  
+  h3 {
+    @apply text-2xl font-medium;
+  }
+  
+  /* ORKESTRA COMPONENTS: Sharp edges, high contrast */
+  button {
+    @apply transition-all duration-150;
+  }
+  
+  /* Remove all rounded corners globally */
+  * {
+    border-radius: 0 !important;
+  }
+  
+  /* Orkestra focus states: Bold black/white rings */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-offset-2;
+  }
+  
+  /* Code blocks: Embrace the monospace */
+  code, pre {
+    @apply font-mono text-sm;
+  }
+  
+  /* Orkestra Links: White underline on hover */
+  a {
+    @apply transition-all duration-150;
+  }
+  
+  a:hover {
+    @apply underline decoration-2 underline-offset-2;
+  }
+  
+  /* Selection: Invert for impact */
+  ::selection {
+    @apply bg-foreground text-background;
+  }
+}
+
+/* ORKESTRA BRAND UTILITIES */
+@layer utilities {
+  /* Opacity variations for subtle effects */
+  .text-muted {
+    @apply text-foreground/70;
+  }
+  
+  .text-subtle {
+    @apply text-foreground/50;
+  }
+  
+  /* Border styles */
+  .border-sharp {
+    @apply border-2 border-foreground;
+  }
+  
+  .border-thin {
+    @apply border border-foreground;
+  }
+  
+  /* Orkestra animations */
+  @keyframes pulse-agent {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+  }
+  
+  .animate-agent-pulse {
+    animation: pulse-agent 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  /* Hover effects */
+  .orkestra-hover {
+    @apply transition-all duration-150 hover:invert;
+  }
+  
+  /* Shadow effects using borders instead of blur */
+  .shadow-orkestra {
+    box-shadow: 4px 4px 0 0 currentColor;
+  }
+  
+  .shadow-orkestra-sm {
+    box-shadow: 2px 2px 0 0 currentColor;
+  }
+}
+
+/* PERSWADE SPECIFIC OVERRIDES FOR ORKESTRA */
+@layer components {
+  /* Make cards sharp and edgy */
+  .card {
+    @apply border-2 !border-foreground shadow-orkestra-sm;
+  }
+  
+  /* Buttons: Bold and unapologetic */
+  .btn-orkestra {
+    @apply px-4 py-2 bg-foreground text-background font-bold uppercase tracking-wider 
+           transition-all duration-150 hover:shadow-orkestra active:translate-x-1 active:translate-y-1;
+  }
+  
+  /* Badges: High contrast */
+  .badge-orkestra {
+    @apply px-2 py-1 bg-foreground text-background text-xs font-bold uppercase;
+  }
+  
+  /* Progress bars: Simple black/white */
+  .progress-orkestra {
+    @apply bg-background border-2 border-foreground h-4;
+  }
+  
+  .progress-orkestra-fill {
+    @apply bg-foreground h-full transition-all duration-300;
+  }
+}
+
+/* ANIMATION ENHANCEMENTS */
+@layer utilities {
+  /* Glitch effect for that edgy feel */
+  @keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-1px, 1px); }
+    40% { transform: translate(-1px, -1px); }
+    60% { transform: translate(1px, 1px); }
+    80% { transform: translate(1px, -1px); }
+    100% { transform: translate(0); }
+  }
+  
+  .glitch-hover:hover {
+    animation: glitch 0.3s ease-in-out;
+  }
+  
+  /* Type effect for that terminal feel */
+  @keyframes type {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+  
+  .type-effect {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: type 2s steps(40, end);
+  }
+}
+
+/* SCROLLBAR STYLING: Black & White */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-foreground;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-foreground/80;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--foreground) var(--background);
+}

@@ -1,0 +1,55 @@
+{
+  "summary": {
+    "audit_date": "2025-08-30T04:24:58.995946",
+    "repository_path": "/Users/matty_btm/Desktop/Perswade Watson",
+    "readiness_score": 0,
+    "critical_issues": 14,
+    "warnings": 7,
+    "recommendations": 2
+  },
+  "critical_issues": [
+    "LICENSE file exists but doesn't appear to be MIT",
+    "LICENSE missing copyright notice",
+    "Missing required file: README.md (Project documentation)",
+    "Missing required file: CONTRIBUTING.md (Contribution guidelines)",
+    "Missing required file: CODE_OF_CONDUCT.md (Community standards)",
+    "Missing required file: SECURITY.md (Security policy)",
+    "Potential urls_with_creds found in: opensource_audit.py",
+    "Potential urls_with_creds found in: frontend/package-lock.json",
+    "Potential urls_with_creds found in: frontend/.next/server/chunks/400.js",
+    "Potential urls_with_creds found in: frontend/.next/server/chunks/985.js",
+    "Potential urls_with_creds found in: frontend/.next/server/chunks/548.js",
+    "Potential private_keys found in: opensource_audit.py",
+    "\u26a0\ufe0f Found sensitive data in 13 files",
+    "Only 0.0% of source files have copyright headers"
+  ],
+  "warnings": [
+    "Missing recommended directory: packages/ (Core packages directory)",
+    "Missing recommended directory: apps/ (Application directory)",
+    "Missing recommended directory: docs/ (Documentation directory)",
+    "Missing recommended directory: examples/ (Example implementations)",
+    "Missing recommended directory: .github/ (GitHub configuration)",
+    "No GitHub Actions workflows found",
+    "No TRADEMARK.md policy file found"
+  ],
+  "recommendations": [
+    "\u2705 C\u00b2PS methodology found in 8 files",
+    "\u2705 AssemblyAI integration found in 181 files"
+  ],
+  "metrics": {
+    "copyright_headers": "0.0%",
+    "total_source_files": 64,
+    "total_lines_of_code": 4363,
+    "languages": {
+      ".py": 11,
+      ".js": 34,
+      ".ts": 6,
+      ".tsx": 13
+    },
+    "test_files": 5594,
+    "brand_mentions": 19,
+    "c2ps_implementation_files": 8,
+    "assemblyai_integration_files": 181
+  },
+  "file_analysis": {}
+}

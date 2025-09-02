@@ -1,0 +1,13 @@
+{
+  "name": "@perswade/transcription",
+  "version": "1.0.0",
+  "description": "AssemblyAI real-time transcription service",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "assemblyai": "^4.0.0"
+  }
+}
